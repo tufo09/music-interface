@@ -1,0 +1,12 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "CMakeLists.txt"
+    message: |
+      The target system is: GHS-MULTI -  - 
+      The host system is: Linux - 6.6.68-1-lts - x86_64
+...
