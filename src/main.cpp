@@ -1,5 +1,4 @@
 #include "crow.h"
-//#include "crow_all.h"
 
 int main()
 {
@@ -7,7 +6,8 @@ int main()
 
     //define your endpoint at the root directory
     CROW_ROUTE(app, "/")([](){
-        return "Hello world";
+        auto page = crow::mustache::load_text("templates/index.html");
+        return page;
     });
 
     //set the port, set the app to run on multiple threads, and run the app
